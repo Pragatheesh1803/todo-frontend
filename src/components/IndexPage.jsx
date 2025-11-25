@@ -136,7 +136,7 @@ function IndexPage() {
    const handleLogOut = ()=>{
     localStorage.removeItem("token")
     localStorage.removeItem("user")
-    navigate("/login")
+    navigate("/")
    }
 
 
@@ -172,7 +172,7 @@ function IndexPage() {
                 {/* Username bubble */}
                 <div className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center bg-gray-800 rounded-full">
                   <span className="font-bold text-sm sm:text-lg text-white">
-                    {username?.charAt(0).toUpperCase()}
+                    {username?.charAt(0).toUpperCase()} 
                   </span>
                 </div>
 
@@ -182,6 +182,7 @@ function IndexPage() {
                     className="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg sm:rounded-xl transition-colors font-medium text-sm sm:text-base"
                   >
                     Logout
+                    
                   </button>
                 </div>
 

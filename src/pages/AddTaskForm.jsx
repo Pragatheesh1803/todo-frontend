@@ -27,7 +27,7 @@ function AddTaskForm() {
             const res = await api.post("/api/user/addtask", taskForm)
             console.log(res.data)
             alert("Task added successfully")
-            navigate("/")
+            navigate("/index")
         } catch (error) {
             console.error(error)
             alert("Sorry we have an issue in our server..try again later ")
@@ -49,7 +49,7 @@ function AddTaskForm() {
               <h1 className="text-2xl sm:text-3xl font-bold">Add New Task</h1>
               <p className="text-indigo-100 mt-2 text-sm sm:text-base">Create and organize your tasks efficiently</p>
             </div>
-            <a href='/' className="p-2 sm:p-3 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
+            <a href='/index' className="p-2 sm:p-3 rounded-full bg-white/20 hover:bg-white/30 transition-colors">
                 x
             </a>
           </div>
@@ -186,7 +186,7 @@ function AddTaskForm() {
                 Create Task
               </button>
               
-              <a href='/'
+              <a href='/index'
                 className="flex-1 border border-gray-300 text-gray-700 hover:bg-gray-50 py-3 sm:py-4 px-6 rounded-lg sm:rounded-xl transition-colors font-medium text-center text-base sm:text-lg"
               >
                 Cancel

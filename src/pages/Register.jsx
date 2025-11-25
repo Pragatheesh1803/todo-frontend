@@ -26,7 +26,7 @@ function Register() {
             const res = await api.post("/api/user/register", registerData)
             console.log(res.data)
             alert("Register Success 😍")
-            navigate("/login")
+            navigate("/")
         } catch (error) {
             console.error(error)
             alert("Register Failed 🤐")

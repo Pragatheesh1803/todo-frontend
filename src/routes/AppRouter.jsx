@@ -10,9 +10,9 @@ function AppRouter() {
     
     
         <Routes>
-            <Route path='/' element={<IndexPage />} />
+            <Route path='/index' element={<IndexPage />} />
             <Route path='/register' element={<Register />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/' element={<Login />} />
             <Route path='/addtaskform' element={<AddTaskForm />} />
         </Routes>
     

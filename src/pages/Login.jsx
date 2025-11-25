@@ -34,7 +34,7 @@ function Login() {
 
             console.log(res,data)
             alert("Login success")
-            navigate("/")
+            navigate("/index")
         } catch (error) {
             console.error(error)
             alert("Register Success")
@@ -47,7 +47,7 @@ function Login() {
         const token = localStorage.getItem("user")
 
         if(token) {
-            navigate("/")
+            navigate("/index")
         }
 
     },[])
